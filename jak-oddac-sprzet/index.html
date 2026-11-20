@@ -253,9 +253,19 @@ section{padding:clamp(64px,8vw,120px) 0}
 .karta .wiecej:hover{color:var(--bd)}
 .siatka-u{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:clamp(14px,1.6vw,24px)}
 .siatka-u .karta{flex:none}
-.komunikat{background:#fff;border-bottom:1px solid var(--l)}
-.komunikat .wrap{display:flex;gap:14px;align-items:flex-start;padding:14px 0;font-size:16px}
-.komunikat .kr{flex:none;width:12px;height:12px;border-radius:50%;background:var(--r);margin-top:6px;box-shadow:0 0 0 4px rgba(188,26,31,.14)}
+.komunikat{background:var(--g);border-bottom:1px solid var(--l)}
+.komunikat[hidden]{display:none}
+.komunikat .wrap{display:flex;gap:10px;align-items:center;padding:6px 0;font-size:14px;line-height:1.4}
+.komunikat p{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.komunikat .kom-uw{color:var(--s)}
+.kom-s{display:none}
+.komunikat button{flex:none;border:0;background:none;font-size:22px;line-height:1;width:32px;height:32px;cursor:pointer;color:var(--s);border-radius:3px}
+.komunikat button:hover{background:#fff;color:var(--t)}
+.komunikat .kr{flex:none;width:8px;height:8px;border-radius:50%;background:var(--r)}
+.btn2{background:transparent;border:1.5px solid rgba(255,255,255,.7);padding:15.5px 22px}
+.btn2:hover{background:rgba(255,255,255,.12)}
+.btn2 svg{width:16px;height:16px}
+.hero .gdzie{margin-top:18px}
 .komunikat b{font-weight:600}
 .komunikat small{display:block;color:var(--s);font-size:13.5px;margin-top:2px}
 .ph-head{background:var(--bd);color:#fff;position:relative;padding:clamp(40px,5vw,76px) 0 clamp(44px,5.4vw,80px);overflow:hidden}
@@ -304,7 +314,7 @@ section{padding:clamp(64px,8vw,120px) 0}
 .cookies button{flex:none;background:var(--b);color:#fff;border:0;border-radius:3px;padding:10px 16px;font:inherit;font-weight:600;cursor:pointer}
 .menu a.on{color:var(--b);background:var(--g)}
 @media (max-width:960px){.tresc{grid-template-columns:1fr}.ph-head.z-foto .wrap{grid-template-columns:1fr}.kroki{grid-template-columns:1fr 1fr}.stopka .g{grid-template-columns:1fr 1fr}}
-@media (max-width:700px){.kroki{grid-template-columns:1fr}.ph-head .kadr{display:none}.cta-pas .btn{width:100%;justify-content:center}.cookies{flex-direction:column;align-items:stretch}}
+@media (max-width:700px){.komunikat .kom-uw,.kom-l{display:none}.kom-s{display:inline}.komunikat .wrap{font-size:13px;padding:3px 0}.hero .in{order:1;padding:26px 0 26px}.hero picture{order:2;width:calc(100% - 2*var(--gut));margin:0 auto 36px;border-radius:3px;overflow:hidden}.hero h1{font-size:clamp(30px,8.6vw,38px)}.hero .lead{font-size:16px;margin-top:12px}.hero .cta{flex-direction:column;align-items:stretch;gap:10px;margin-top:24px}.hero .btn{padding-top:14px;padding-bottom:14px}.hero .gdzie{margin-top:14px;font-size:15px}.kroki{grid-template-columns:1fr}.ph-head .kadr{display:none}.cta-pas .btn{width:100%;justify-content:center}.cookies{flex-direction:column;align-items:stretch}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://foto-naprawa.com/"}, {"@type": "ListItem", "position": 2, "name": "Jak oddać sprzęt", "item": "https://foto-naprawa.com/jak-oddac-sprzet/"}]}</script>
 </head>

@@ -9,7 +9,7 @@
 <link rel="canonical" href="https://foto-naprawa.com/">
 <meta name="theme-color" content="#005074">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-<link rel="preload" as="image" href="img/hero-f-1024.webp" imagesrcset="img/hero-f-640.webp 640w, img/hero-f-1024.webp 1024w, img/hero-f-1600.webp 1600w" imagesizes="(max-width:700px) 100vw, (min-width:1765px) 600px, (min-width:1000px) 34vw, 340px" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-g-1024.webp" imagesrcset="img/hero-g-640.webp 640w, img/hero-g-1024.webp 1024w, img/hero-g-1600.webp 1600w" imagesizes="(max-width:700px) 100vw, (min-width:1765px) 600px, (min-width:1000px) 34vw, 340px" fetchpriority="high">
 <link rel="preload" as="font" type="font/woff2" href="fonts/is-rdzen.woff2" crossorigin>
 <style>
 @font-face{font-family:"Instrument Sans";font-weight:400 700;font-stretch:75% 100%;font-display:swap;src:url(fonts/is-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+2122}
@@ -254,9 +254,19 @@ section{padding:clamp(64px,8vw,120px) 0}
 .karta .wiecej:hover{color:var(--bd)}
 .siatka-u{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:clamp(14px,1.6vw,24px)}
 .siatka-u .karta{flex:none}
-.komunikat{background:#fff;border-bottom:1px solid var(--l)}
-.komunikat .wrap{display:flex;gap:14px;align-items:flex-start;padding:14px 0;font-size:16px}
-.komunikat .kr{flex:none;width:12px;height:12px;border-radius:50%;background:var(--r);margin-top:6px;box-shadow:0 0 0 4px rgba(188,26,31,.14)}
+.komunikat{background:var(--g);border-bottom:1px solid var(--l)}
+.komunikat[hidden]{display:none}
+.komunikat .wrap{display:flex;gap:10px;align-items:center;padding:6px 0;font-size:14px;line-height:1.4}
+.komunikat p{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.komunikat .kom-uw{color:var(--s)}
+.kom-s{display:none}
+.komunikat button{flex:none;border:0;background:none;font-size:22px;line-height:1;width:32px;height:32px;cursor:pointer;color:var(--s);border-radius:3px}
+.komunikat button:hover{background:#fff;color:var(--t)}
+.komunikat .kr{flex:none;width:8px;height:8px;border-radius:50%;background:var(--r)}
+.btn2{background:transparent;border:1.5px solid rgba(255,255,255,.7);padding:15.5px 22px}
+.btn2:hover{background:rgba(255,255,255,.12)}
+.btn2 svg{width:16px;height:16px}
+.hero .gdzie{margin-top:18px}
 .komunikat b{font-weight:600}
 .komunikat small{display:block;color:var(--s);font-size:13.5px;margin-top:2px}
 .ph-head{background:var(--bd);color:#fff;position:relative;padding:clamp(40px,5vw,76px) 0 clamp(44px,5.4vw,80px);overflow:hidden}
@@ -305,7 +315,7 @@ section{padding:clamp(64px,8vw,120px) 0}
 .cookies button{flex:none;background:var(--b);color:#fff;border:0;border-radius:3px;padding:10px 16px;font:inherit;font-weight:600;cursor:pointer}
 .menu a.on{color:var(--b);background:var(--g)}
 @media (max-width:960px){.tresc{grid-template-columns:1fr}.ph-head.z-foto .wrap{grid-template-columns:1fr}.kroki{grid-template-columns:1fr 1fr}.stopka .g{grid-template-columns:1fr 1fr}}
-@media (max-width:700px){.kroki{grid-template-columns:1fr}.ph-head .kadr{display:none}.cta-pas .btn{width:100%;justify-content:center}.cookies{flex-direction:column;align-items:stretch}}
+@media (max-width:700px){.komunikat .kom-uw,.kom-l{display:none}.kom-s{display:inline}.komunikat .wrap{font-size:13px;padding:3px 0}.hero .in{order:1;padding:26px 0 26px}.hero picture{order:2;width:calc(100% - 2*var(--gut));margin:0 auto 36px;border-radius:3px;overflow:hidden}.hero h1{font-size:clamp(30px,8.6vw,38px)}.hero .lead{font-size:16px;margin-top:12px}.hero .cta{flex-direction:column;align-items:stretch;gap:10px;margin-top:24px}.hero .btn{padding-top:14px;padding-bottom:14px}.hero .gdzie{margin-top:14px;font-size:15px}.kroki{grid-template-columns:1fr}.ph-head .kadr{display:none}.cta-pas .btn{width:100%;justify-content:center}.cookies{flex-direction:column;align-items:stretch}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "FOTOSERWIS", "description": "Serwis aparatów fotograficznych, obiektywów, kamer video i lamp błyskowych w Poznaniu. Naprawa na miejscu, bez pośredników, od 1990 roku.", "url": "https://foto-naprawa.com/", "telephone": "+48 61 862 51 21", "email": "info@foto-naprawa.com", "foundingDate": "1990", "address": {"@type": "PostalAddress", "streetAddress": "ul. Galileusza 8", "postalCode": "60-159", "addressLocality": "Poznań", "addressCountry": "PL"}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "17:00"}], "areaServed": "PL"}</script>
 </head>
@@ -325,12 +335,13 @@ section{padding:clamp(64px,8vw,120px) 0}
   </div>
 </header>
 <main>
-<div class="komunikat" role="status">
-  <div class="wrap"><span class="kr" aria-hidden="true"></span><p><b>Miejsce na komunikat, np. „Serwis nieczynny od 23.12 do 2.01. Zapraszamy od 3 stycznia.”</b><small>Przykład: treść komunikatu wpiszą Państwo sami w panelu i włączą go tylko wtedy, gdy będzie potrzebny.</small></p></div>
+<div class="komunikat" id="kom" role="status">
+  <div class="wrap"><span class="kr" aria-hidden="true"></span><p><b><span class="kom-l">Przykładowy komunikat:</span><span class="kom-s">Przykład:</span></b> Serwis nieczynny 23.12-2.01<span class="kom-uw"> (treść i włączanie w panelu)</span></p><button type="button" id="komx" aria-label="Zamknij komunikat">&times;</button></div>
 </div>
+<script>try{if(sessionStorage.getItem('komx'))document.getElementById('kom').hidden=true}catch(e){}document.getElementById('komx').onclick=function(){document.getElementById('kom').hidden=true;try{sessionStorage.setItem('komx','1')}catch(e){}}</script>
 <section class="hero" aria-label="Fotoserwis Poznań">
   <picture>
-    <img src="img/hero-f-1024.webp" srcset="img/hero-f-640.webp 640w, img/hero-f-1024.webp 1024w, img/hero-f-1600.webp 1600w" data-big="img/hero-f-1600.webp" sizes="(max-width:700px) 100vw, (min-width:1765px) 600px, (min-width:1000px) 34vw, 340px" width="1024" height="768" fetchpriority="high" alt="Lustrzanka cyfrowa z podniesioną lampą błyskową i obiektywem zmiennoogniskowym">
+    <img src="img/hero-g-1024.webp" srcset="img/hero-g-640.webp 640w, img/hero-g-1024.webp 1024w, img/hero-g-1600.webp 1600w" data-big="img/hero-g-1600.webp" sizes="(max-width:700px) 100vw, (min-width:1765px) 600px, (min-width:1000px) 34vw, 340px" width="1024" height="768" fetchpriority="high" alt="Lustrzanka cyfrowa z podniesioną lampą błyskową i obiektywem zmiennoogniskowym">
   </picture>
   <div class="kadr" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
   <div class="in">
@@ -338,8 +349,9 @@ section{padding:clamp(64px,8vw,120px) 0}
     <p class="lead">Naprawiamy aparaty fotograficzne i sprzęt video na miejscu, bez pośredników - od 1990 roku. Aparaty cyfrowe i analogowe, obiektywy, kamery i lampy błyskowe.</p>
     <div class="cta">
       <a class="btn" href="tel:+48618625121"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6.2 2.5 4 3.1c-.9.3-1.4 1.1-1.3 2 .6 5.6 5.6 10.6 11.2 11.2.9.1 1.7-.4 2-1.3l.6-2.2-3.4-1.6-1.6 1.6c-1.9-.9-3.4-2.4-4.3-4.3l1.6-1.6z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>Zadzwoń: 61 862 51 21</a>
-      <p class="gdzie"><b>ul. Galileusza 8, I piętro</b><br>pon.-pt. 9:00-17:00</p>
+      <a class="btn btn2" href="jak-oddac-sprzet/">Jak oddać sprzęt <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7.5 4 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
     </div>
+    <p class="gdzie"><b>ul. Galileusza 8, I piętro</b> &nbsp;·&nbsp; pon.-pt. 9:00-17:00</p>
   </div>
 </section>
 
@@ -358,7 +370,7 @@ section{padding:clamp(64px,8vw,120px) 0}
         <div class="tx"><h3><a href="uslugi/aparaty-cyfrowe/">Aparaty cyfrowe</a></h3><p>Lustrzanki, bezlusterkowce (hybrydy) i kompakty. Usterki mechaniczne i elektroniczne, czyszczenie i konserwacja.</p><a class="wiecej" href="uslugi/aparaty-cyfrowe/" aria-label="Aparaty cyfrowe - więcej">Więcej <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7.5 4 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a></div>
       </article>
       <article class="karta">
-        <div class="foto"><img src="img/analog2-560.webp" srcset="img/analog2-560.webp 560w, img/analog2-900.webp 900w, img/analog2-1600.webp 1600w" data-big="img/analog2-1600.webp" sizes="(max-width:700px) 80vw, 380px" width="1024" height="768" loading="lazy" alt="Analogowa lustrzanka Canon AE-1 z obiektywem 50 mm"></div>
+        <div class="foto"><img src="img/analog4-560.webp" srcset="img/analog4-560.webp 560w, img/analog4-900.webp 900w, img/analog4-1600.webp 1600w" data-big="img/analog4-1600.webp" sizes="(max-width:700px) 80vw, 380px" width="1024" height="768" loading="lazy" alt="Analogowa lustrzanka Canon AE-1 z obiektywem 50 mm"></div>
         <div class="tx"><h3><a href="uslugi/aparaty-analogowe/">Aparaty analogowe</a></h3><p>Tradycyjne aparaty na kliszę - migawki, mechanizmy, światłomierze. Naprawa i konserwacja klasyki.</p><a class="wiecej" href="uslugi/aparaty-analogowe/" aria-label="Aparaty analogowe - więcej">Więcej <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7.5 4 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a></div>
       </article>
       <article class="karta">
@@ -366,7 +378,7 @@ section{padding:clamp(64px,8vw,120px) 0}
         <div class="tx"><h3><a href="uslugi/obiektywy/">Obiektywy</a></h3><p>Autofokus, przysłona, zacinający się zoom, zabrudzenia i wilgoć wewnątrz. Najpierw próbujemy naprawić, nie wymieniać.</p><a class="wiecej" href="uslugi/obiektywy/" aria-label="Obiektywy - więcej">Więcej <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7.5 4 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a></div>
       </article>
       <article class="karta">
-        <div class="foto"><img src="img/kamera2-560.webp" srcset="img/kamera2-560.webp 560w, img/kamera2-900.webp 900w, img/kamera2-1600.webp 1600w" data-big="img/kamera2-1600.webp" sizes="(max-width:700px) 80vw, 380px" width="1024" height="768" loading="lazy" alt="Cyfrowa kamera video MiniDV z odchylanym ekranem"></div>
+        <div class="foto"><img src="img/kamera4-560.webp" srcset="img/kamera4-560.webp 560w, img/kamera4-900.webp 900w, img/kamera4-1600.webp 1600w" data-big="img/kamera4-1600.webp" sizes="(max-width:700px) 80vw, 380px" width="1024" height="768" loading="lazy" alt="Cyfrowa kamera video MiniDV z odchylanym ekranem"></div>
         <div class="tx"><h3><a href="uslugi/kamery-video/">Kamery video</a></h3><p>Kamery i urządzenia do filmowania wraz z akcesoriami - naprawa, czyszczenie i konserwacja.</p><a class="wiecej" href="uslugi/kamery-video/" aria-label="Kamery video - więcej">Więcej <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7.5 4 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a></div>
       </article>
       <article class="karta">
