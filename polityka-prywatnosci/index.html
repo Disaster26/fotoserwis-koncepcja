@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Polityka prywatności i cookies | FOTOSERWIS Poznań</title>
+<meta name="description" content="Polityka prywatności i plików cookies strony FOTOSERWIS - serwisu aparatów fotograficznych w Poznaniu, ul. Galileusza 8.">
+<link rel="canonical" href="https://foto-naprawa.com/polityka-prywatnosci/">
+<meta name="theme-color" content="#005074">
+<link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="font" type="font/woff2" href="../fonts/is-rdzen.woff2" crossorigin>
+<style>
+@font-face{font-family:"Instrument Sans";font-weight:400 700;font-stretch:75% 100%;font-display:swap;src:url(../fonts/is-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+2122}
+@font-face{font-family:"Instrument Sans";font-weight:400 700;font-stretch:75% 100%;font-display:swap;src:url(../fonts/is-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--b:#0078B0;--b2:#00689A;--bd:#005074;--bdd:#003D59;--r:#BC1A1F;--t:#14212B;--s:#4B5A66;--g:#EEF2F5;--l:#D5DDE3;--hh:68px;--gut:clamp(16px,3.2vw,56px);--w:1600px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;font-family:"Instrument Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17px;line-height:1.6;color:var(--t);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;line-height:1.08;letter-spacing:-.012em;font-weight:700}
+h1{font-stretch:84%;font-size:clamp(38px,4.9vw,84px)}
+h2{font-stretch:86%;font-size:clamp(32px,3.6vw,54px)}
+h3{font-size:21px;line-height:1.2}
+p{margin:0}
+.wrap{width:min(var(--w),100% - 2*var(--gut));margin-inline:auto}
+.btn{display:inline-flex;align-items:center;gap:12px;background:var(--b);color:#fff;font-weight:600;font-size:18px;text-decoration:none;padding:17px 26px 17px 22px;border-radius:3px;line-height:1.2;transition:background .2s,transform .2s}
+.btn:hover{background:var(--b2)}
+.btn:active{transform:translateY(1px)}
+.btn svg{width:20px;height:20px;flex:none}
+.dot{display:inline-block;width:.42em;height:.42em;border-radius:50%;background:var(--r);vertical-align:.18em;margin-left:.12em}
+
+/* naglowek */
+.top{position:sticky;top:0;z-index:50;height:var(--hh);background:#fff;border-bottom:1px solid transparent;transition:border-color .2s,box-shadow .2s}
+.top.sc{border-bottom-color:var(--l);box-shadow:0 6px 24px rgba(0,40,60,.06)}
+.top .wrap{height:100%;display:flex;align-items:center;gap:28px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--t);font-weight:700;font-size:22px;letter-spacing:-.01em;font-stretch:90%}
+.logo svg{width:28px;height:28px;flex:none}
+.logo small{display:block;font-size:12.5px;font-weight:500;color:var(--s);letter-spacing:0;font-stretch:100%;line-height:1.1;margin-top:1px}
+.logo span{line-height:1}
+.menu{display:flex;gap:4px;margin-left:auto}
+.menu a{text-decoration:none;font-weight:500;font-size:16px;padding:10px 14px;border-radius:3px;color:var(--t)}
+.menu a:hover{background:var(--g)}
+.menu a.on{color:var(--b)}
+.top .tel{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:700;font-size:17px;color:#fff;background:var(--bd);padding:11px 16px;border-radius:3px;white-space:nowrap}
+.top .tel:hover{background:var(--bdd)}
+.top .tel svg{width:17px;height:17px}
+.burger{display:none;margin-left:auto;width:46px;height:46px;border:1px solid var(--l);background:#fff;border-radius:3px;cursor:pointer;padding:0;align-items:center;justify-content:center}
+.burger i{display:block;width:20px;height:2px;background:var(--t);position:relative;transition:background .2s}
+.burger i:before,.burger i:after{content:"";position:absolute;left:0;width:20px;height:2px;background:var(--t);transition:transform .25s}
+.burger i:before{top:-6px}.burger i:after{top:6px}
+.top.open .burger i{background:transparent}
+.top.open .burger i:before{transform:translateY(6px) rotate(45deg)}
+.top.open .burger i:after{transform:translateY(-6px) rotate(-45deg)}
+
+/* pierwszy ekran */
+.nw{white-space:nowrap}
+/* lightbox */
+.hero picture img,.karta .foto img{cursor:zoom-in}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(6,14,20,.94);display:none;align-items:center;justify-content:center;flex-direction:column;padding:56px 64px 20px;touch-action:pan-y}
+.lb.on{display:flex}
+.lb img{max-width:100%;max-height:calc(100svh - 130px);width:auto;height:auto;object-fit:contain;border-radius:3px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.lb p{color:#fff;margin-top:14px;font-size:15.5px;text-align:center;line-height:1.4}
+.lb p span{opacity:.65;margin-left:10px}
+.lb button{position:absolute;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);color:#fff;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;cursor:pointer}
+.lb button:hover{background:rgba(255,255,255,.2)}
+.lb button svg{width:20px;height:20px}
+.lb .x{top:14px;right:14px}.lb .pv{left:14px;top:50%;transform:translateY(-50%)}.lb .nx{right:14px;top:50%;transform:translateY(-50%)}
+@media (max-width:700px){.lb{padding:60px 10px 16px}.lb .pv,.lb .nx{top:auto;bottom:14px;transform:none}.lb img{max-height:calc(100svh - 170px)}}
+.hero{position:relative;min-height:calc(100svh - var(--hh));display:flex;color:#fff;background:#0b1c26;overflow:hidden}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%}
+.hero picture img{object-fit:cover;object-position:50% 50%}
+@media (min-width:701px){
+  .hero picture{inset:auto;top:50%;right:max(var(--gut) + 20px,(100% - var(--w))/2);width:clamp(340px,34vw,600px);height:auto;aspect-ratio:4/3;transform:translateY(-50%);z-index:2;border-radius:4px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.45),0 0 0 1px rgba(255,255,255,.08)}
+  .hero picture img{position:static;display:block}
+  .hero .in>*,.hero .in .lead{max-width:calc(100% - clamp(340px,34vw,600px) - 56px)}
+  .hero h1{font-size:clamp(38px,3.9vw,72px)}
+}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,32,48,.86) 0%,rgba(0,40,60,.62) 38%,rgba(0,40,60,.05) 70%)}
+.kadr{position:absolute;inset:clamp(14px,2.2vw,32px);pointer-events:none;z-index:2}
+.kadr i{position:absolute;width:clamp(26px,3vw,46px);height:clamp(26px,3vw,46px);border:0 solid rgba(255,255,255,.85)}
+.kadr i:nth-child(1){top:0;left:0;border-top-width:2px;border-left-width:2px}
+.kadr i:nth-child(2){top:0;right:0;border-top-width:2px;border-right-width:2px}
+.kadr i:nth-child(3){bottom:0;left:0;border-bottom-width:2px;border-left-width:2px}
+.kadr i:nth-child(4){bottom:0;right:0;border-bottom-width:2px;border-right-width:2px}
+.hero .in{position:relative;z-index:3;width:min(var(--w),100% - 2*var(--gut) - 40px);margin:auto;padding:56px 0 64px}
+.hero .lead{font-size:clamp(18px,1.45vw,22px);line-height:1.5;max-width:34em;margin-top:22px;color:rgba(255,255,255,.92)}
+.hero .cta{display:flex;flex-wrap:wrap;align-items:center;gap:16px 26px;margin-top:34px}
+.hero .gdzie{font-size:16px;line-height:1.45;color:rgba(255,255,255,.88)}
+.hero .gdzie b{font-weight:600;color:#fff}
+
+/* skala odleglosci - separator */
+.skala{position:relative;height:38px;display:flex;justify-content:space-between;align-items:flex-end;font-size:12.5px;font-weight:600;color:var(--s);padding:0 2px 0;background:repeating-linear-gradient(90deg,currentColor 0 1px,transparent 1px 12px) top left/100% 9px no-repeat;opacity:.9}
+.skala span{position:relative;line-height:1}
+.skala span:before{content:"";position:absolute;left:50%;top:-20px;width:1px;height:15px;background:currentColor}
+.skala .r{color:var(--r)}
+.skala .r:before{width:2px;margin-left:-.5px}
+
+/* sekcje */
+section{padding:clamp(64px,8vw,120px) 0}
+.sz{background:var(--g)}
+.hd{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px 40px;margin-bottom:clamp(30px,3.6vw,52px)}
+.hd p{max-width:36em;color:var(--s);font-size:18px}
+
+/* sprzet - karty */
+.tor{display:flex;gap:clamp(14px,1.6vw,24px);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab;padding-bottom:4px;overscroll-behavior-x:contain}
+.tor::-webkit-scrollbar{display:none}
+.tor.drag{cursor:grabbing;scroll-snap-type:none}
+.tor.drag *{pointer-events:none}
+.karta{flex:0 0 clamp(272px,26vw,380px);scroll-snap-align:start;background:#fff;user-select:none}
+.foto{position:relative;aspect-ratio:4/3;overflow:hidden;background:#dfe5ea}
+.foto img{width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+.karta:hover .foto img{transform:scale(1.04)}
+.foto:before,.foto:after{content:"";position:absolute;z-index:2;width:22px;height:22px;border:0 solid #fff;opacity:.95}
+.foto:before{top:12px;left:12px;border-top-width:2px;border-left-width:2px}
+.foto:after{bottom:12px;right:12px;border-bottom-width:2px;border-right-width:2px}
+.karta .tx{padding:22px 22px 26px}
+.karta p{margin-top:9px;color:var(--s);font-size:16px;line-height:1.55}
+.nav{display:flex;gap:10px}
+.nav button{width:52px;height:52px;border:1px solid var(--l);background:#fff;border-radius:3px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--t)}
+.nav button:hover{border-color:var(--b);color:var(--b)}
+.nav svg{width:20px;height:20px}
+.inne{margin-top:30px;font-size:17px;color:var(--s);max-width:60em}
+.inne b{color:var(--t);font-weight:600}
+.marki{margin-top:clamp(44px,5vw,72px);border-top:1px solid var(--l);padding-top:28px;display:grid;grid-template-columns:minmax(200px,300px) 1fr;gap:20px 48px}
+.marki h3{font-size:19px}
+.marki h3+p{color:var(--s);font-size:15.5px;margin-top:6px}
+.marki .zap{color:var(--bd);font-weight:700;font-size:17px}
+.dwie .adr b{font-size:1.08em;font-weight:700}
+.mk{overflow:hidden}
+.marki ul{list-style:none;margin:0 0 0 -23px;padding:0;display:flex;flex-wrap:wrap;gap:10px 0}
+.marki li{font-size:clamp(21px,1.9vw,28px);font-weight:600;font-stretch:88%;letter-spacing:-.01em;padding-left:22px;margin-right:22px;border-left:1px solid var(--l);line-height:1.2}
+
+/* ciemna sekcja */
+.dk{background:var(--bd);color:#fff;position:relative;overflow:hidden}
+.dk h2{max-width:15ch}
+.dk .siatka{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(36px,6vw,110px);align-items:start}
+.dk .lead2{font-size:clamp(18px,1.4vw,21px);color:rgba(255,255,255,.88);margin-top:24px;max-width:30em}
+.pkt{list-style:none;margin:0;padding:0}
+.pkt li{padding:24px 0 24px 34px;border-top:1px solid rgba(255,255,255,.2);position:relative}
+.pkt li:last-child{border-bottom:1px solid rgba(255,255,255,.2)}
+.pkt li:before{content:"";position:absolute;left:2px;top:31px;width:12px;height:12px;border-top:2px solid #fff;border-left:2px solid #fff}
+.pkt li:after{content:"";position:absolute;left:8px;top:37px;width:6px;height:6px;border-radius:50%;background:var(--r)}
+.pkt b{display:block;font-size:20px;font-weight:600;margin-bottom:5px}
+.pkt span{color:rgba(255,255,255,.82);font-size:16.5px}
+.dk .skala{color:rgba(255,255,255,.55);margin-top:clamp(48px,6vw,84px)}
+.dk .skala .r{color:#ff6b6f}
+
+/* jak oddac */
+.dwie{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2vw,28px)}
+.dwie article{background:#fff;padding:clamp(26px,3vw,44px);border-top:3px solid var(--b)}
+.dwie h3{font-size:24px;font-stretch:90%}
+.dwie p{margin-top:12px;color:var(--s)}
+.dwie p b{color:var(--t);font-weight:600}
+.dwie .uw{margin-top:18px;font-size:15.5px;padding-top:16px;border-top:1px solid var(--l)}
+
+/* kontakt */
+.kont{display:grid;grid-template-columns:minmax(300px,.8fr) 1.2fr;gap:clamp(30px,4vw,70px);align-items:stretch}
+.dane{display:flex;flex-direction:column;gap:26px}
+.dane .tl{font-size:clamp(32px,3.2vw,46px);font-weight:700;font-stretch:86%;text-decoration:none;color:var(--b);line-height:1.05;letter-spacing:-.01em}
+.dane .tl:hover{color:var(--b2)}
+.dane dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:12px 22px;font-size:17px}
+.dane dt{color:var(--s)}
+.dane dd{margin:0;font-weight:500}
+.dane dd a{text-decoration-color:var(--l);text-underline-offset:3px}
+.godz{background:var(--g);padding:20px 22px;display:flex;justify-content:space-between;gap:16px;align-items:center;font-size:17px}
+.godz b{font-size:22px;font-weight:700;font-stretch:90%}
+.mapa{position:relative;min-height:420px;background:#dde4ea;overflow:hidden}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.mapa .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--s);font-size:15px}
+.mapa:before,.mapa:after{content:"";position:absolute;z-index:2;width:26px;height:26px;border:0 solid var(--bd);pointer-events:none}
+.mapa:before{top:12px;left:12px;border-top-width:2px;border-left-width:2px}
+.mapa:after{bottom:12px;right:12px;border-bottom-width:2px;border-right-width:2px}
+
+/* stopka */
+.stopka{background:var(--bdd);color:rgba(255,255,255,.78);padding:46px 0 28px;font-size:15px}
+.stopka .g{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:28px 40px}
+.stopka .logo{color:#fff}
+.stopka .logo small{color:rgba(255,255,255,.65)}
+.stopka h4{margin:0 0 10px;color:#fff;font-size:15px;font-weight:600}
+.stopka a{text-decoration:none}
+.stopka a:hover{color:#fff}
+.stopka p+p{margin-top:4px}
+.stopka .dol{margin-top:34px;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;align-items:center}
+.stopka .zr{font-size:12.5px;color:rgba(255,255,255,.55);margin-top:16px;line-height:1.5}
+.stopka .zr a{text-decoration:underline;text-underline-offset:2px}
+
+/* Wylinka - oficjalny znak */
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+/* responsywnosc */
+@media (max-width:1080px){
+  .menu a{padding:10px 10px;font-size:15.5px}
+}
+@media (max-width:960px){
+  .menu,.top .tel{display:none}
+  .burger{display:flex}
+  .top.open .menu{display:flex;position:absolute;top:var(--hh);left:0;right:0;flex-direction:column;gap:0;background:#fff;border-bottom:1px solid var(--l);box-shadow:0 18px 30px rgba(0,40,60,.12);padding:8px var(--gut) 20px}
+  .top.open .menu a{padding:15px 2px;font-size:19px;border-bottom:1px solid var(--g);border-radius:0}
+  .top.open .menu .mtel{display:flex}
+  .dk .siatka,.kont{grid-template-columns:1fr}
+  .marki{grid-template-columns:1fr}
+}
+.menu .mtel{display:none;margin-top:14px;justify-content:center;background:var(--bd);color:#fff!important;font-weight:700;border-radius:3px!important;border:0!important}
+@media (max-width:700px){
+  body{font-size:16.5px}
+  .hero{min-height:0;flex-direction:column;padding:0}
+  .hero picture{position:relative;inset:auto;height:auto;aspect-ratio:4/3;z-index:1}
+  .hero picture img{position:static;display:block}
+  .hero:after{display:none}
+  .hero .kadr{display:none}
+  .hero .in{margin:0 auto;padding:30px 0 44px;width:calc(100% - 2*var(--gut) - 16px)}
+  h1{font-size:clamp(34px,10vw,44px)}
+  h1 .d{display:none}
+  .hero .lead{margin-top:16px;font-size:17px}
+  .hero .cta{margin-top:26px;gap:14px}
+  .hero .btn{width:100%;justify-content:center}
+  .nav{display:none}
+  .tor{margin-inline:calc(-1*var(--gut));padding-inline:var(--gut);scroll-padding-inline:var(--gut)}
+  .karta{flex-basis:80vw}
+  .dwie{grid-template-columns:1fr}
+  .mapa{min-height:320px}
+  .stopka .g{grid-template-columns:1fr 1fr}
+  .stopka .g>div:first-child{grid-column:1/-1}
+  .skala span:nth-child(even){visibility:hidden}
+  .godz{flex-direction:column;align-items:flex-start;gap:4px}
+}
+
+/* --- strona gotowa: wspolne --- */
+.foto{aspect-ratio:auto;background:var(--g);padding:clamp(12px,1.3vw,18px);overflow:hidden}
+.foto img{aspect-ratio:4/3;width:100%;height:auto;object-fit:cover;border-radius:2px;box-shadow:0 1px 2px rgba(0,40,60,.08),0 8px 22px rgba(0,40,60,.10);transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+.karta:hover .foto img{transform:scale(1.02)}
+.foto:before,.foto:after{width:16px;height:16px;border-color:var(--bd);opacity:.55}
+.foto:before{top:5px;left:5px}.foto:after{bottom:5px;right:5px}
+.karta{display:flex;flex-direction:column;border:1px solid var(--l)}
+.karta .tx{display:flex;flex-direction:column;flex:1}
+.karta h3 a,.karta h2 a{text-decoration:none}
+.karta .tx h2{font-size:21px;line-height:1.2;font-stretch:100%;letter-spacing:0}
+.karta h2 a:hover{color:var(--b)}
+.karta h3 a:hover{color:var(--b)}
+.karta .wiecej{margin-top:auto;padding-top:14px;font-weight:600;font-size:15.5px;color:var(--b);text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.karta .wiecej svg{width:16px;height:16px}
+.karta .wiecej:hover{color:var(--bd)}
+.siatka-u{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:clamp(14px,1.6vw,24px)}
+.siatka-u .karta{flex:none}
+.komunikat{background:#fff;border-bottom:1px solid var(--l)}
+.komunikat .wrap{display:flex;gap:14px;align-items:flex-start;padding:14px 0;font-size:16px}
+.komunikat .kr{flex:none;width:12px;height:12px;border-radius:50%;background:var(--r);margin-top:6px;box-shadow:0 0 0 4px rgba(188,26,31,.14)}
+.komunikat b{font-weight:600}
+.komunikat small{display:block;color:var(--s);font-size:13.5px;margin-top:2px}
+.ph-head{background:var(--bd);color:#fff;position:relative;padding:clamp(40px,5vw,76px) 0 clamp(44px,5.4vw,80px);overflow:hidden}
+.ph-head .kadr i{border-color:rgba(255,255,255,.5)}
+.ph-head .wrap{position:relative;z-index:3}
+.ph-head h1{font-size:clamp(36px,4.4vw,72px);max-width:20ch}
+.ph-head .lead{font-size:clamp(18px,1.4vw,21px);color:rgba(255,255,255,.88);margin-top:20px;max-width:40em;line-height:1.5}
+.okr{display:flex;flex-wrap:wrap;gap:6px 0;font-size:14.5px;margin-bottom:22px;color:rgba(255,255,255,.72);list-style:none;padding:0}
+.okr li+li:before{content:"/";margin:0 10px;opacity:.5}
+.okr a{color:#fff;text-decoration:none}
+.okr a:hover{text-decoration:underline}
+.tresc{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(30px,5vw,90px);align-items:start}
+.tresc .tx p{color:var(--s);font-size:18px;max-width:38em}
+.tresc .tx p+p{margin-top:16px}
+.tresc .tx h2{font-size:clamp(28px,2.6vw,40px);margin-bottom:20px}
+.tresc .tx h3{margin:30px 0 12px}
+.lst{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.lst li{padding:12px 0 12px 30px;border-top:1px solid var(--l);position:relative;font-weight:500}
+.lst li:last-child{border-bottom:1px solid var(--l)}
+.lst li:before{content:"";position:absolute;left:1px;top:19px;width:10px;height:10px;border-top:2px solid var(--bd);border-left:2px solid var(--bd)}
+.lst li:after{content:"";position:absolute;left:6px;top:24px;width:5px;height:5px;border-radius:50%;background:var(--r)}
+.cta-pas{background:var(--g);padding:clamp(28px,3vw,44px);display:flex;flex-wrap:wrap;gap:18px 30px;align-items:center;justify-content:space-between;margin-top:clamp(36px,4vw,56px)}
+.cta-pas h3{font-size:clamp(21px,1.7vw,26px);font-stretch:90%}
+.cta-pas p{color:var(--s);margin-top:6px}
+.inne-u{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.inne-u a{border:1px solid var(--l);padding:10px 16px;border-radius:3px;text-decoration:none;font-weight:500;background:#fff}
+.inne-u a:hover{border-color:var(--b);color:var(--b)}
+.kroki{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,1.6vw,24px);counter-reset:k}
+.kroki li{background:#fff;padding:26px 24px 28px;border-top:3px solid var(--b);counter-increment:k}
+.kroki li:before{content:counter(k);display:block;font-size:40px;font-weight:700;font-stretch:84%;color:var(--bd);line-height:1;margin-bottom:12px}
+.kroki b{display:block;font-size:19px;margin-bottom:6px}
+.kroki li>span{color:var(--s);font-size:16px}
+.ph-head.z-foto .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,4vw,72px);align-items:center}
+.ph-foto .foto{background:rgba(255,255,255,.1)}
+.ph-foto .foto:before,.ph-foto .foto:after{border-color:#fff}
+.prawne{max-width:52em}
+.prawne h2{font-size:clamp(24px,2.2vw,32px);margin:38px 0 12px}
+.prawne p,.prawne li{color:var(--s)}
+.prawne p+p{margin-top:12px}
+.prawne ul{padding-left:20px}
+.stopka .g{grid-template-columns:1.3fr 1fr 1fr 1fr}
+.stopka nav a{display:block;margin-top:4px}
+.cookies{position:fixed;left:12px;right:12px;bottom:12px;z-index:90;max-width:640px;margin-left:auto;background:var(--t);color:#fff;padding:14px 16px;border-radius:4px;display:flex;gap:14px;align-items:center;font-size:14.5px;line-height:1.45;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.cookies[hidden]{display:none}
+.cookies a{color:#fff}
+.cookies button{flex:none;background:var(--b);color:#fff;border:0;border-radius:3px;padding:10px 16px;font:inherit;font-weight:600;cursor:pointer}
+.menu a.on{color:var(--b);background:var(--g)}
+@media (max-width:960px){.tresc{grid-template-columns:1fr}.ph-head.z-foto .wrap{grid-template-columns:1fr}.kroki{grid-template-columns:1fr 1fr}.stopka .g{grid-template-columns:1fr 1fr}}
+@media (max-width:700px){.kroki{grid-template-columns:1fr}.ph-head .kadr{display:none}.cta-pas .btn{width:100%;justify-content:center}.cookies{flex-direction:column;align-items:stretch}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://foto-naprawa.com/"}, {"@type": "ListItem", "position": 2, "name": "Polityka prywatności", "item": "https://foto-naprawa.com/polityka-prywatnosci/"}]}</script>
+</head>
+<body>
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="../" aria-label="FOTOSERWIS - strona główna">
+      <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M1 9V1h8M19 1h8v8M27 19v8h-8M9 27H1v-8" fill="none" stroke="#005074" stroke-width="2.4"/><circle cx="14" cy="14" r="3.6" fill="#BC1A1F"/></svg>
+      <span>Fotoserwis<small>serwis foto i video, Poznań</small></span>
+    </a>
+    <nav class="menu" id="menu" aria-label="Menu">
+      <a href="../uslugi/">Usługi</a><a href="../o-nas/">O nas</a><a href="../dlaczego-my/">Dlaczego my</a><a href="../jak-oddac-sprzet/">Jak oddać sprzęt</a><a href="../kontakt/">Kontakt</a>
+      <a class="mtel" href="tel:+48618625121">Zadzwoń: 61 862 51 21</a>
+    </nav>
+    <a class="tel" href="tel:+48618625121"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6.2 2.5 4 3.1c-.9.3-1.4 1.1-1.3 2 .6 5.6 5.6 10.6 11.2 11.2.9.1 1.7-.4 2-1.3l.6-2.2-3.4-1.6-1.6 1.6c-1.9-.9-3.4-2.4-4.3-4.3l1.6-1.6z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>61 862 51 21</a>
+    <button class="burger" id="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu"><i></i></button>
+  </div>
+</header>
+<main>
+<section class="ph-head">
+  <div class="kadr" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <div class="wrap">
+    <div class="ph-tx">
+    <ol class="okr" aria-label="Ścieżka nawigacji"><li><a href="../">Strona główna</a></li><li aria-current="page">Polityka prywatności</li></ol>
+    <h1>Polityka <span class="nw">prywatności<span class="dot" aria-hidden="true"></span></span></h1>
+    <p class="lead">Informacje o przetwarzaniu danych osobowych i plikach cookies.</p>
+    </div>
+    
+  </div>
+</section>
+<section>
+  <div class="wrap prawne">
+    <h2>Administrator danych</h2>
+    <p>Administratorem danych osobowych jest Krzysztof Śniadalski, prowadzący działalność gospodarczą pod firmą „FOTOSERWIS” KRZYSZTOF ŚNIADALSKI, ul. Galileusza 8, 60-159 Poznań, NIP 779-118-78-65. Kontakt: tel. 61 862 51 21, e-mail <a href="mailto:info@foto-naprawa.com">info@foto-naprawa.com</a>.</p>
+    <h2>Jakie dane i w jakim celu</h2>
+    <p>Jeśli kontaktujesz się z nami telefonicznie lub e-mailem, przetwarzamy dane, które nam podasz (np. imię i nazwisko, numer telefonu, adres e-mail, adres do odesłania sprzętu), w celu odpowiedzi na zapytanie i wykonania naprawy (art. 6 ust. 1 lit. b RODO) oraz wypełnienia obowiązków księgowych i podatkowych (art. 6 ust. 1 lit. c RODO).</p>
+    <p>Dane przechowujemy przez czas potrzebny do realizacji naprawy i obsługi gwarancji, a dokumenty księgowe przez okres wymagany przepisami.</p>
+    <h2>Pliki cookies</h2>
+    <p>Strona korzysta z plików cookies. Używamy ich do zapamiętania, że zamknięto informację o cookies, oraz do statystyki odwiedzin (Google Analytics). Na stronie Kontakt wyświetlamy mapę Google, która może zapisywać własne pliki cookies Google.</p>
+    <p>Możesz w każdej chwili usunąć pliki cookies lub zablokować ich zapisywanie w ustawieniach swojej przeglądarki.</p>
+    <h2>Odbiorcy danych</h2>
+    <p>Dane mogą być powierzane podmiotom, które świadczą dla nas usługi hostingu, poczty e-mail, księgowe oraz przewozowe (przy odsyłce sprzętu), a w zakresie statystyk i mapy - firmie Google.</p>
+    <h2>Twoje prawa</h2>
+    <ul><li>dostęp do danych, ich sprostowanie, usunięcie lub ograniczenie przetwarzania,</li><li>sprzeciw wobec przetwarzania i przeniesienie danych,</li><li>skarga do Prezesa Urzędu Ochrony Danych Osobowych.</li></ul>
+    <p>W sprawach danych osobowych skontaktuj się z nami telefonicznie lub e-mailem.</p>
+  </div>
+</section>
+</main>
+<footer class="stopka">
+  <div class="wrap">
+    <div class="g">
+      <div>
+        <a class="logo" href="../" aria-label="FOTOSERWIS - strona główna">
+          <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M1 9V1h8M19 1h8v8M27 19v8h-8M9 27H1v-8" fill="none" stroke="#fff" stroke-width="2.4"/><circle cx="14" cy="14" r="3.6" fill="#BC1A1F"/></svg>
+          <span>Fotoserwis<small>serwis aparatów fotograficznych, obiektywów i kamer video</small></span>
+        </a>
+      </div>
+      <div>
+        <h4>Adres</h4>
+        <p>ul. Galileusza 8, I piętro</p>
+        <p>60-159 Poznań</p>
+        <p>pon.-pt. 9:00-17:00</p>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <p><a href="tel:+48618625121">61 862 51 21</a></p>
+        <p><a href="mailto:info@foto-naprawa.com">info@foto-naprawa.com</a></p>
+      </div>
+      <nav aria-label="Strony">
+        <h4>Strony</h4>
+        <a href="../uslugi/">Usługi</a><a href="../o-nas/">O nas</a><a href="../dlaczego-my/">Dlaczego my</a><a href="../jak-oddac-sprzet/">Jak oddać sprzęt</a><a href="../kontakt/">Kontakt</a>
+        <a href="../polityka-prywatnosci/">Polityka prywatności</a>
+      </nav>
+    </div>
+    <div class="dol">
+      <span>&copy; 2026 FOTOSERWIS Poznań</span>
+      <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=foto-naprawa.com&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+    </div>
+    <p class="zr">Podgląd strony. Zdjęcia: pierwszy ekran, aparat analogowy i kamera - zdjęcia serwisu. Pozostałe: Nikon D3200 - Rwendland, CC BY-SA 3.0; obiektyw Nikkor 50 mm - André Karwath, CC BY-SA 2.5 (Wikimedia Commons); lampa błyskowa - Bedirhan Akyüz (Unsplash).</p>
+  </div>
+</footer>
+<div class="cookies" id="cookies" hidden><p>Strona korzysta z plików cookies, m.in. przy wyświetlaniu mapy Google. Szczegóły w <a href="../polityka-prywatnosci/">polityce prywatności</a>.</p><button type="button" id="cok">Rozumiem</button></div>
+<script>try{if(!localStorage.getItem('cok'))document.getElementById('cookies').hidden=false}catch(e){document.getElementById('cookies').hidden=false}document.getElementById('cok').onclick=function(){try{localStorage.setItem('cok','1')}catch(e){}document.getElementById('cookies').hidden=true}</script>
+<script src="../app.js" defer></script>
+</body>
+</html>

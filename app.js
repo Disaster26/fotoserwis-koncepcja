@@ -21,7 +21,7 @@
     document.querySelectorAll('.nav button').forEach(function(b){b.addEventListener('click',function(){var w=tor.querySelector('.karta').getBoundingClientRect().width+20;tor.scrollBy({left:w*(+b.dataset.k),behavior:'smooth'})})});
   }
   // lightbox: zdjecia kart i pierwszego ekranu
-  var imgs=[].slice.call(document.querySelectorAll('.hero picture img,.karta .foto img'));
+  var imgs=[].slice.call(document.querySelectorAll('.hero picture img,.foto img'));
   if(imgs.length){
     var ar='<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12.5 4 6.5 10l6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>';
     var lbx=document.createElement('div');lbx.className='lb';lbx.setAttribute('role','dialog');lbx.setAttribute('aria-modal','true');lbx.setAttribute('aria-label','Powiększone zdjęcie');
