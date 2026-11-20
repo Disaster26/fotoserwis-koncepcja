@@ -426,6 +426,9 @@ h1,.hero h1,.ph-head h1{font-size:clamp(25px,7vw,29px)}
 .stopka .logo small{text-wrap:balance}
 p,li,dd{text-wrap:pretty}
 @media (max-width:700px){
+.hero picture{order:1;margin:16px auto 0;aspect-ratio:3/2}
+.hero picture img{width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero .in{order:2;padding:18px 0 30px}
 .stopka .g{grid-template-columns:1fr 1fr}
 .stopka .g>div:nth-child(2),.stopka .g>div:nth-child(3){grid-column:1/-1}
 .stopka .g>div:nth-child(3) p:not(.h4){display:inline}
