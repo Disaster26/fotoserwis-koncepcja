@@ -8,8 +8,7 @@
 <meta name="description" content="Serwis aparatów fotograficznych, obiektywów, kamer video i lamp błyskowych w Poznaniu, ul. Galileusza 8. Naprawa na miejscu, bez pośredników, od 1990 roku. Tel. 61 862 51 21.">
 <meta name="theme-color" content="#005074">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-<link rel="preload" as="image" href="img/hero-m-480.webp" imagesrcset="img/hero-m-480.webp 480w, img/hero-m-800.webp 800w" imagesizes="100vw" media="(max-width:700px)" fetchpriority="high">
-<link rel="preload" as="image" href="img/hero-1600.webp" imagesrcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2400.webp 2400w" imagesizes="100vw" media="(min-width:701px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-f-1024.webp" imagesrcset="img/hero-f-640.webp 640w, img/hero-f-1024.webp 1024w, img/hero-f-1600.webp 1600w" imagesizes="(max-width:700px) 100vw, (min-width:1765px) 600px, (min-width:1000px) 34vw, 340px" fetchpriority="high">
 <link rel="preload" as="font" type="font/woff2" href="fonts/is-rdzen.woff2" crossorigin>
 <style>
 @font-face{font-family:"Instrument Sans";font-weight:400 700;font-stretch:75% 100%;font-display:swap;src:url(fonts/is-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+2122}
@@ -56,9 +55,28 @@ p{margin:0}
 .top.open .burger i:after{transform:translateY(-6px) rotate(-45deg)}
 
 /* pierwszy ekran */
+.nw{white-space:nowrap}
+/* lightbox */
+.hero picture img,.karta .foto img{cursor:zoom-in}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(6,14,20,.94);display:none;align-items:center;justify-content:center;flex-direction:column;padding:56px 64px 20px;touch-action:pan-y}
+.lb.on{display:flex}
+.lb img{max-width:100%;max-height:calc(100svh - 130px);width:auto;height:auto;object-fit:contain;border-radius:3px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.lb p{color:#fff;margin-top:14px;font-size:15.5px;text-align:center;line-height:1.4}
+.lb p span{opacity:.65;margin-left:10px}
+.lb button{position:absolute;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);color:#fff;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;cursor:pointer}
+.lb button:hover{background:rgba(255,255,255,.2)}
+.lb button svg{width:20px;height:20px}
+.lb .x{top:14px;right:14px}.lb .pv{left:14px;top:50%;transform:translateY(-50%)}.lb .nx{right:14px;top:50%;transform:translateY(-50%)}
+@media (max-width:700px){.lb{padding:60px 10px 16px}.lb .pv,.lb .nx{top:auto;bottom:14px;transform:none}.lb img{max-height:calc(100svh - 170px)}}
 .hero{position:relative;min-height:calc(100svh - var(--hh));display:flex;color:#fff;background:#0b1c26;overflow:hidden}
 .hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%}
-.hero picture img{object-fit:cover;object-position:78% 50%}
+.hero picture img{object-fit:cover;object-position:50% 50%}
+@media (min-width:701px){
+  .hero picture{inset:auto;top:50%;right:max(var(--gut) + 20px,(100% - var(--w))/2);width:clamp(340px,34vw,600px);height:auto;aspect-ratio:4/3;transform:translateY(-50%);z-index:2;border-radius:4px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.45),0 0 0 1px rgba(255,255,255,.08)}
+  .hero picture img{position:static;display:block}
+  .hero .in>*,.hero .in .lead{max-width:calc(100% - clamp(340px,34vw,600px) - 56px)}
+  .hero h1{font-size:clamp(38px,3.9vw,72px)}
+}
 .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,32,48,.86) 0%,rgba(0,40,60,.62) 38%,rgba(0,40,60,.05) 70%)}
 .kadr{position:absolute;inset:clamp(14px,2.2vw,32px);pointer-events:none;z-index:2}
 .kadr i{position:absolute;width:clamp(26px,3vw,46px);height:clamp(26px,3vw,46px);border:0 solid rgba(255,255,255,.85)}
@@ -196,10 +214,12 @@ section{padding:clamp(64px,8vw,120px) 0}
 .menu .mtel{display:none;margin-top:14px;justify-content:center;background:var(--bd);color:#fff!important;font-weight:700;border-radius:3px!important;border:0!important}
 @media (max-width:700px){
   body{font-size:16.5px}
-  .hero{min-height:calc(100svh - var(--hh))}
-  .hero picture img{object-position:50% 40%}
-  .hero:after{background:linear-gradient(180deg,rgba(0,32,48,.25) 0%,rgba(0,32,48,.35) 34%,rgba(0,32,48,.86) 66%,rgba(0,32,48,.94) 100%)}
-  .hero .in{margin:auto auto 0;padding:72px 0 40px;width:calc(100% - 2*var(--gut) - 16px)}
+  .hero{min-height:0;flex-direction:column;padding:0}
+  .hero picture{position:relative;inset:auto;height:auto;aspect-ratio:4/3;z-index:1}
+  .hero picture img{position:static;display:block}
+  .hero:after{display:none}
+  .hero .kadr{display:none}
+  .hero .in{margin:0 auto;padding:30px 0 44px;width:calc(100% - 2*var(--gut) - 16px)}
   h1{font-size:clamp(34px,10vw,44px)}
   h1 .d{display:none}
   .hero .lead{margin-top:16px;font-size:17px}
@@ -239,8 +259,7 @@ section{padding:clamp(64px,8vw,120px) 0}
 <main>
 <section class="hero" aria-label="Fotoserwis Poznań">
   <picture>
-    <source media="(max-width:700px)" srcset="img/hero-m-480.webp 480w, img/hero-m-800.webp 800w" sizes="100vw" width="480" height="775">
-    <img src="img/hero-1600.webp" srcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2400.webp 2400w" sizes="100vw" width="1600" height="800" alt="Lustrzanka cyfrowa z podniesioną lampą błyskową i obiektywem zmiennoogniskowym" fetchpriority="high">
+    <img src="img/hero-f-1024.webp" srcset="img/hero-f-640.webp 640w, img/hero-f-1024.webp 1024w, img/hero-f-1600.webp 1600w" data-big="img/hero-f-1600.webp" sizes="(max-width:700px) 100vw, (min-width:1765px) 600px, (min-width:1000px) 34vw, 340px" width="1024" height="768" alt="Lustrzanka cyfrowa z podniesioną lampą błyskową i obiektywem zmiennoogniskowym" fetchpriority="high">
   </picture>
   <div class="kadr" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
   <div class="in">
@@ -268,7 +287,7 @@ section{padding:clamp(64px,8vw,120px) 0}
         <div class="tx"><h3>Aparaty cyfrowe</h3><p>Lustrzanki, bezlusterkowce (hybrydy) i kompakty. Usterki mechaniczne i elektroniczne, czyszczenie matrycy i konserwacja.</p></div>
       </article>
       <article class="karta">
-        <div class="foto"><img src="img/analog-560.webp" srcset="img/analog-560.webp 560w, img/analog-900.webp 900w" sizes="(max-width:700px) 80vw, 380px" width="560" height="420" loading="lazy" alt="Analogowa lustrzanka Canon AE-1 z obiektywem 50 mm"></div>
+        <div class="foto"><img src="img/analog2-560.webp" srcset="img/analog2-560.webp 560w, img/analog2-900.webp 900w" data-big="img/analog2-1600.webp" sizes="(max-width:700px) 80vw, 380px" width="560" height="420" loading="lazy" alt="Analogowa lustrzanka Canon AE-1 z obiektywem 50 mm"></div>
         <div class="tx"><h3>Aparaty analogowe</h3><p>Tradycyjne aparaty na kliszę - migawki, mechanizmy, światłomierze. Naprawa i konserwacja klasyki.</p></div>
       </article>
       <article class="karta">
@@ -276,7 +295,7 @@ section{padding:clamp(64px,8vw,120px) 0}
         <div class="tx"><h3>Obiektywy</h3><p>Autofokus, przysłona, zacinający się zoom, zabrudzenia i wilgoć wewnątrz. Najpierw próbujemy naprawić, nie wymieniać.</p></div>
       </article>
       <article class="karta">
-        <div class="foto"><img src="img/kamera-560.webp" srcset="img/kamera-560.webp 560w, img/kamera-900.webp 900w" sizes="(max-width:700px) 80vw, 380px" width="560" height="420" loading="lazy" alt="Cyfrowa kamera video MiniDV z odchylanym ekranem"></div>
+        <div class="foto"><img src="img/kamera2-560.webp" srcset="img/kamera2-560.webp 560w, img/kamera2-900.webp 900w" data-big="img/kamera2-1600.webp" sizes="(max-width:700px) 80vw, 380px" width="560" height="420" loading="lazy" alt="Cyfrowa kamera video MiniDV z odchylanym ekranem"></div>
         <div class="tx"><h3>Kamery video</h3><p>Kamery i urządzenia do filmowania wraz z akcesoriami - naprawa, czyszczenie i konserwacja.</p></div>
       </article>
       <article class="karta">
@@ -330,7 +349,7 @@ section{padding:clamp(64px,8vw,120px) 0}
         <h3>Pocztą lub kurierem</h3>
         <p>Przyjmujemy zlecenia z całego kraju. Zanim nadasz paczkę, <b>zadzwoń do nas</b> - ustalimy szczegóły wysyłki i opiszesz usterkę.</p>
         <p>Sprzęt zapakuj starannie, najlepiej w oryginalne pudełko lub gruby karton z wypełnieniem.</p>
-        <p class="adr">Adres do wysyłki:<br><b>ul. Galileusza 8, 60-159 Poznań</b></p>
+        <p class="adr">Adres do wysyłki:<br><b>FOTOSERWIS, ul. Galileusza 8, <span class="nw">60-159 Poznań</span></b></p>
         <p class="uw">Telefon: <a href="tel:+48618625121"><b>61 862 51 21</b></a></p>
       </article>
     </div>
