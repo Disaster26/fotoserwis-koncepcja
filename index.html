@@ -9,7 +9,7 @@
 <link rel="canonical" href="https://foto-naprawa.com/">
 <meta name="theme-color" content="#005074">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-<link rel="preload" as="image" href="img/hero-g-1024.webp" imagesrcset="img/hero-g-640.webp 640w, img/hero-g-1024.webp 1024w, img/hero-g-1600.webp 1600w" imagesizes="(max-width:700px) 100vw, (min-width:1765px) 600px, (min-width:1000px) 34vw, 340px" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-g-1024.webp" imagesrcset="img/hero-g-640.webp 640w, img/hero-g-680.webp 680w, img/hero-g-1024.webp 1024w, img/hero-g-1600.webp 1600w" imagesizes="(max-width:700px) calc(100vw - 32px), (min-width:1765px) 600px, (min-width:1000px) 34vw, 340px" fetchpriority="high">
 <link rel="preload" as="font" type="font/woff2" href="fonts/is-rdzen.woff2" crossorigin>
 <style>
 @font-face{font-family:"Instrument Sans";font-weight:400 700;font-stretch:75% 100%;font-display:swap;src:url(fonts/is-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+2122}
@@ -179,7 +179,7 @@ section{padding:clamp(64px,8vw,120px) 0}
 .stopka .g{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:28px 40px}
 .stopka .logo{color:#fff}
 .stopka .logo small{color:rgba(255,255,255,.65)}
-.stopka h4{margin:0 0 10px;color:#fff;font-size:15px;font-weight:600}
+.stopka h4,.stopka .h4{margin:0 0 10px;color:#fff;font-size:15px;font-weight:600}
 .stopka a{text-decoration:none}
 .stopka a:hover{color:#fff}
 .stopka p+p{margin-top:4px}
@@ -392,7 +392,7 @@ section{padding:48px 0}
 .prawne h2{font-size:22px;margin:28px 0 10px}
 .stopka{padding:36px 0 28px;font-size:14.5px}
 .stopka .g{gap:22px 24px}
-.stopka nav{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;column-gap:24px}.stopka nav h4{grid-column:1/-1}.stopka nav a{padding:6px 0;margin-top:0}
+.stopka nav{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;column-gap:24px}.stopka nav .h4{grid-column:1/-1}.stopka nav a{padding:6px 0;margin-top:0}
 .stopka p+p{margin-top:2px}
 .stopka .dol{margin-top:24px}
 .stopka .zr{font-size:12px}
@@ -405,7 +405,7 @@ section{padding:48px 0}
 <body>
 <header class="top" id="top">
   <div class="wrap">
-    <a class="logo" href="" aria-label="FOTOSERWIS - strona główna">
+    <a class="logo" href="">
       <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M1 9V1h8M19 1h8v8M27 19v8h-8M9 27H1v-8" fill="none" stroke="#005074" stroke-width="2.4"/><circle cx="14" cy="14" r="3.6" fill="#BC1A1F"/></svg>
       <span>Fotoserwis<small>serwis foto i video, Poznań</small></span>
     </a>
@@ -425,7 +425,7 @@ section{padding:48px 0}
 <script>try{if(sessionStorage.getItem('komx'))document.getElementById('kom').hidden=true}catch(e){}document.getElementById('komx').onclick=function(){document.getElementById('kom').hidden=true;try{sessionStorage.setItem('komx','1')}catch(e){}}</script>
 <section class="hero" aria-label="Fotoserwis Poznań">
   <picture>
-    <img src="img/hero-g-1024.webp" srcset="img/hero-g-640.webp 640w, img/hero-g-1024.webp 1024w, img/hero-g-1600.webp 1600w" data-big="img/hero-g-1600.webp" sizes="(max-width:700px) 100vw, (min-width:1765px) 600px, (min-width:1000px) 34vw, 340px" width="1024" height="768" fetchpriority="high" alt="Lustrzanka cyfrowa z podniesioną lampą błyskową i obiektywem zmiennoogniskowym">
+    <img src="img/hero-g-1024.webp" srcset="img/hero-g-640.webp 640w, img/hero-g-680.webp 680w, img/hero-g-1024.webp 1024w, img/hero-g-1600.webp 1600w" data-big="img/hero-g-1600.webp" sizes="(max-width:700px) calc(100vw - 32px), (min-width:1765px) 600px, (min-width:1000px) 34vw, 340px" width="1024" height="768" fetchpriority="high" alt="Lustrzanka cyfrowa z podniesioną lampą błyskową i obiektywem zmiennoogniskowym">
   </picture>
   <div class="kadr" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
   <div class="in">
@@ -450,23 +450,23 @@ section{padding:48px 0}
     </div>
     <div class="tor" id="tor">
       <article class="karta">
-        <div class="foto"><img src="img/cyfrowy3-560.webp" srcset="img/cyfrowy3-560.webp 560w, img/cyfrowy3-900.webp 900w, img/cyfrowy3-1600.webp 1600w" data-big="img/cyfrowy3-1600.webp" sizes="(max-width:700px) 80vw, 380px" width="1024" height="768" loading="lazy" alt="Cyfrowa lustrzanka Nikon D3200 z obiektywem 18-55 mm"></div>
+        <div class="foto"><img src="img/cyfrowy3-560.webp" srcset="img/cyfrowy3-560.webp 560w, img/cyfrowy3-640.webp 640w, img/cyfrowy3-900.webp 900w, img/cyfrowy3-1600.webp 1600w" data-big="img/cyfrowy3-1600.webp" sizes="(max-width:700px) calc(78vw - 22px), 380px" width="1024" height="768" loading="lazy" alt="Cyfrowa lustrzanka Nikon D3200 z obiektywem 18-55 mm"></div>
         <div class="tx"><h3><a href="uslugi/aparaty-cyfrowe/">Aparaty cyfrowe</a></h3><p>Lustrzanki, bezlusterkowce (hybrydy) i kompakty. Usterki mechaniczne i elektroniczne, czyszczenie i konserwacja.</p><a class="wiecej" href="uslugi/aparaty-cyfrowe/" aria-label="Aparaty cyfrowe - więcej">Więcej <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7.5 4 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a></div>
       </article>
       <article class="karta">
-        <div class="foto"><img src="img/analog4-560.webp" srcset="img/analog4-560.webp 560w, img/analog4-900.webp 900w, img/analog4-1600.webp 1600w" data-big="img/analog4-1600.webp" sizes="(max-width:700px) 80vw, 380px" width="1024" height="768" loading="lazy" alt="Analogowa lustrzanka Canon AE-1 z obiektywem 50 mm"></div>
+        <div class="foto"><img src="img/analog4-560.webp" srcset="img/analog4-560.webp 560w, img/analog4-640.webp 640w, img/analog4-900.webp 900w, img/analog4-1600.webp 1600w" data-big="img/analog4-1600.webp" sizes="(max-width:700px) calc(78vw - 22px), 380px" width="1024" height="768" loading="lazy" alt="Analogowa lustrzanka Canon AE-1 z obiektywem 50 mm"></div>
         <div class="tx"><h3><a href="uslugi/aparaty-analogowe/">Aparaty analogowe</a></h3><p>Tradycyjne aparaty na kliszę - migawki, mechanizmy, światłomierze. Naprawa i konserwacja klasyki.</p><a class="wiecej" href="uslugi/aparaty-analogowe/" aria-label="Aparaty analogowe - więcej">Więcej <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7.5 4 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a></div>
       </article>
       <article class="karta">
-        <div class="foto"><img src="img/obiektyw3-560.webp" srcset="img/obiektyw3-560.webp 560w, img/obiektyw3-900.webp 900w" data-big="img/obiektyw3-900.webp" sizes="(max-width:700px) 80vw, 380px" width="1024" height="768" loading="lazy" alt="Obiektyw stałoogniskowy Nikkor 50 mm f/1.8"></div>
+        <div class="foto"><img src="img/obiektyw3-560.webp" srcset="img/obiektyw3-560.webp 560w, img/obiektyw3-640.webp 640w, img/obiektyw3-900.webp 900w" data-big="img/obiektyw3-900.webp" sizes="(max-width:700px) calc(78vw - 22px), 380px" width="1024" height="768" loading="lazy" alt="Obiektyw stałoogniskowy Nikkor 50 mm f/1.8"></div>
         <div class="tx"><h3><a href="uslugi/obiektywy/">Obiektywy</a></h3><p>Autofokus, przysłona, zacinający się zoom, zabrudzenia i wilgoć wewnątrz. Najpierw próbujemy naprawić, nie wymieniać.</p><a class="wiecej" href="uslugi/obiektywy/" aria-label="Obiektywy - więcej">Więcej <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7.5 4 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a></div>
       </article>
       <article class="karta">
-        <div class="foto"><img src="img/kamera4-560.webp" srcset="img/kamera4-560.webp 560w, img/kamera4-900.webp 900w, img/kamera4-1600.webp 1600w" data-big="img/kamera4-1600.webp" sizes="(max-width:700px) 80vw, 380px" width="1024" height="768" loading="lazy" alt="Cyfrowa kamera video MiniDV z odchylanym ekranem"></div>
+        <div class="foto"><img src="img/kamera4-560.webp" srcset="img/kamera4-560.webp 560w, img/kamera4-640.webp 640w, img/kamera4-900.webp 900w, img/kamera4-1600.webp 1600w" data-big="img/kamera4-1600.webp" sizes="(max-width:700px) calc(78vw - 22px), 380px" width="1024" height="768" loading="lazy" alt="Cyfrowa kamera video MiniDV z odchylanym ekranem"></div>
         <div class="tx"><h3><a href="uslugi/kamery-video/">Kamery video</a></h3><p>Kamery i urządzenia do filmowania wraz z akcesoriami - naprawa, czyszczenie i konserwacja.</p><a class="wiecej" href="uslugi/kamery-video/" aria-label="Kamery video - więcej">Więcej <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7.5 4 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a></div>
       </article>
       <article class="karta">
-        <div class="foto"><img src="img/lampa3-560.webp" srcset="img/lampa3-560.webp 560w, img/lampa3-900.webp 900w, img/lampa3-1600.webp 1600w" data-big="img/lampa3-1600.webp" sizes="(max-width:700px) 80vw, 380px" width="1024" height="768" loading="lazy" alt="Systemowa lampa błyskowa z wyświetlaczem"></div>
+        <div class="foto"><img src="img/lampa3-560.webp" srcset="img/lampa3-560.webp 560w, img/lampa3-640.webp 640w, img/lampa3-900.webp 900w, img/lampa3-1600.webp 1600w" data-big="img/lampa3-1600.webp" sizes="(max-width:700px) calc(78vw - 22px), 380px" width="1024" height="768" loading="lazy" alt="Systemowa lampa błyskowa z wyświetlaczem"></div>
         <div class="tx"><h3><a href="uslugi/lampy-blyskowe/">Lampy błyskowe</a></h3><p>Lampy systemowe i studyjne do aparatów fotograficznych - diagnoza usterki, naprawa i konserwacja.</p><a class="wiecej" href="uslugi/lampy-blyskowe/" aria-label="Lampy błyskowe - więcej">Więcej <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7.5 4 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a></div>
       </article>
     </div>
@@ -544,24 +544,24 @@ section{padding:48px 0}
   <div class="wrap">
     <div class="g">
       <div>
-        <a class="logo" href="" aria-label="FOTOSERWIS - strona główna">
+        <a class="logo" href="">
           <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M1 9V1h8M19 1h8v8M27 19v8h-8M9 27H1v-8" fill="none" stroke="#fff" stroke-width="2.4"/><circle cx="14" cy="14" r="3.6" fill="#BC1A1F"/></svg>
           <span>Fotoserwis<small>serwis aparatów fotograficznych, obiektywów i kamer video</small></span>
         </a>
       </div>
       <div>
-        <h4>Adres</h4>
+        <p class="h4">Adres</p>
         <p>ul. Galileusza 8, I piętro</p>
         <p>60-159 Poznań</p>
         <p>pon.-pt. 9:00-17:00</p>
       </div>
       <div>
-        <h4>Kontakt</h4>
+        <p class="h4">Kontakt</p>
         <p><a href="tel:+48618625121">61 862 51 21</a></p>
         <p><a href="mailto:info@foto-naprawa.com">info@foto-naprawa.com</a></p>
       </div>
       <nav aria-label="Strony">
-        <h4>Strony</h4>
+        <p class="h4">Strony</p>
         <a href="uslugi/">Usługi</a><a href="o-nas/">O nas</a><a href="dlaczego-my/">Dlaczego my</a><a href="jak-oddac-sprzet/">Jak oddać sprzęt</a><a href="kontakt/">Kontakt</a>
         <a href="polityka-prywatnosci/">Polityka prywatności</a>
       </nav>

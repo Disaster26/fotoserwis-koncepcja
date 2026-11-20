@@ -178,7 +178,7 @@ section{padding:clamp(64px,8vw,120px) 0}
 .stopka .g{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:28px 40px}
 .stopka .logo{color:#fff}
 .stopka .logo small{color:rgba(255,255,255,.65)}
-.stopka h4{margin:0 0 10px;color:#fff;font-size:15px;font-weight:600}
+.stopka h4,.stopka .h4{margin:0 0 10px;color:#fff;font-size:15px;font-weight:600}
 .stopka a{text-decoration:none}
 .stopka a:hover{color:#fff}
 .stopka p+p{margin-top:4px}
@@ -391,7 +391,7 @@ section{padding:48px 0}
 .prawne h2{font-size:22px;margin:28px 0 10px}
 .stopka{padding:36px 0 28px;font-size:14.5px}
 .stopka .g{gap:22px 24px}
-.stopka nav{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;column-gap:24px}.stopka nav h4{grid-column:1/-1}.stopka nav a{padding:6px 0;margin-top:0}
+.stopka nav{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;column-gap:24px}.stopka nav .h4{grid-column:1/-1}.stopka nav a{padding:6px 0;margin-top:0}
 .stopka p+p{margin-top:2px}
 .stopka .dol{margin-top:24px}
 .stopka .zr{font-size:12px}
@@ -404,7 +404,7 @@ section{padding:48px 0}
 <body>
 <header class="top" id="top">
   <div class="wrap">
-    <a class="logo" href="../" aria-label="FOTOSERWIS - strona główna">
+    <a class="logo" href="../">
       <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M1 9V1h8M19 1h8v8M27 19v8h-8M9 27H1v-8" fill="none" stroke="#005074" stroke-width="2.4"/><circle cx="14" cy="14" r="3.6" fill="#BC1A1F"/></svg>
       <span>Fotoserwis<small>serwis foto i video, Poznań</small></span>
     </a>
@@ -464,24 +464,24 @@ section{padding:48px 0}
   <div class="wrap">
     <div class="g">
       <div>
-        <a class="logo" href="../" aria-label="FOTOSERWIS - strona główna">
+        <a class="logo" href="../">
           <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M1 9V1h8M19 1h8v8M27 19v8h-8M9 27H1v-8" fill="none" stroke="#fff" stroke-width="2.4"/><circle cx="14" cy="14" r="3.6" fill="#BC1A1F"/></svg>
           <span>Fotoserwis<small>serwis aparatów fotograficznych, obiektywów i kamer video</small></span>
         </a>
       </div>
       <div>
-        <h4>Adres</h4>
+        <p class="h4">Adres</p>
         <p>ul. Galileusza 8, I piętro</p>
         <p>60-159 Poznań</p>
         <p>pon.-pt. 9:00-17:00</p>
       </div>
       <div>
-        <h4>Kontakt</h4>
+        <p class="h4">Kontakt</p>
         <p><a href="tel:+48618625121">61 862 51 21</a></p>
         <p><a href="mailto:info@foto-naprawa.com">info@foto-naprawa.com</a></p>
       </div>
       <nav aria-label="Strony">
-        <h4>Strony</h4>
+        <p class="h4">Strony</p>
         <a href="../uslugi/">Usługi</a><a href="../o-nas/">O nas</a><a href="../dlaczego-my/">Dlaczego my</a><a href="../jak-oddac-sprzet/">Jak oddać sprzęt</a><a href="../kontakt/">Kontakt</a>
         <a href="../polityka-prywatnosci/">Polityka prywatności</a>
       </nav>
