@@ -398,6 +398,39 @@ section{padding:48px 0}
 }
 @media (min-width:701px) and (max-width:1024px){.hero{min-height:0}.hero .in{padding:72px 0 80px}}
 @media (max-width:370px){.logo small{font-size:11px}.hero .gdzie{font-size:14px}}
+/* karty i zdjecia 20.11b */
+h1,h2{text-wrap:balance}
+.foto{padding:0;background:#E6ECF0;border-bottom:1px solid var(--l);overflow:hidden}
+.foto:before,.foto:after{display:none}
+.foto img{border-radius:0;box-shadow:none;aspect-ratio:4/3;width:100%;height:auto;object-fit:cover}
+.karta:hover .foto img{transform:scale(1.03)}
+.ph-foto .foto{background:none;border:0;border-radius:3px}
+.karta .jl{display:none}
+@media (max-width:700px){
+h1,.hero h1,.ph-head h1{font-size:clamp(25px,7vw,29px)}
+.hero h1{max-width:min(100%,318px)}
+.tor{display:grid;grid-template-columns:1fr;gap:12px;overflow:visible;margin-inline:0;padding:0;scroll-snap-type:none;cursor:auto}
+.tor .karta,.siatka-u .karta{display:grid;grid-template-columns:36% 1fr;align-items:stretch;flex:none;min-height:104px}
+.tor .karta .foto,.siatka-u .karta .foto{position:relative;aspect-ratio:auto;min-width:0;border-bottom:0;border-right:1px solid var(--l)}
+.tor .karta .foto img,.siatka-u .karta .foto img{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto}
+.karta .tx{padding:12px 12px 10px 14px;justify-content:center;min-width:0}
+.karta .tx h2,.karta h3{font-size:17.5px;line-height:1.2}
+.karta .tx p{display:none}
+.karta .tx .jl{display:block;margin-top:3px;font-size:14px;line-height:1.4;color:var(--s);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.karta .wiecej{min-height:0;margin-top:2px;padding:6px 0 2px;font-size:15px}
+.siatka-u{gap:12px}
+}
+/* dokladnosc 20.11c */
+.kroki li>span b{display:inline;font-size:inherit;margin:0}
+.mapa:before,.mapa:after{display:none}
+.stopka .logo small{text-wrap:balance}
+p,li,dd{text-wrap:pretty}
+@media (max-width:700px){
+.stopka .g{grid-template-columns:1fr 1fr}
+.stopka .g>div:nth-child(2),.stopka .g>div:nth-child(3){grid-column:1/-1}
+.stopka .g>div:nth-child(3) p:not(.h4){display:inline}
+.stopka .g>div:nth-child(3) p:not(.h4)+p:before{content:" · ";color:rgba(255,255,255,.5)}
+}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://foto-naprawa.com/"}, {"@type": "ListItem", "position": 2, "name": "Polityka prywatności", "item": "https://foto-naprawa.com/polityka-prywatnosci/"}]}</script>
 </head>
@@ -406,10 +439,10 @@ section{padding:48px 0}
   <div class="wrap">
     <a class="logo" href="../">
       <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M1 9V1h8M19 1h8v8M27 19v8h-8M9 27H1v-8" fill="none" stroke="#005074" stroke-width="2.4"/><circle cx="14" cy="14" r="3.6" fill="#BC1A1F"/></svg>
-      <span>Fotoserwis<small>serwis foto i video, Poznań</small></span>
+      <span>Fotoserwis<small>serwis foto i&nbsp;video, Poznań</small></span>
     </a>
     <nav class="menu" id="menu" aria-label="Menu">
-      <a href="../uslugi/">Usługi</a><a href="../o-nas/">O nas</a><a href="../dlaczego-my/">Dlaczego my</a><a href="../jak-oddac-sprzet/">Jak oddać sprzęt</a><a href="../kontakt/">Kontakt</a>
+      <a href="../uslugi/">Usługi</a><a href="../o-nas/">O&nbsp;nas</a><a href="../dlaczego-my/">Dlaczego my</a><a href="../jak-oddac-sprzet/">Jak oddać sprzęt</a><a href="../kontakt/">Kontakt</a>
       <a class="mtel" href="tel:+48618625121">Zadzwoń: 61 862 51 21</a>
     </nav>
     <a class="tel" href="tel:+48618625121"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6.2 2.5 4 3.1c-.9.3-1.4 1.1-1.3 2 .6 5.6 5.6 10.6 11.2 11.2.9.1 1.7-.4 2-1.3l.6-2.2-3.4-1.6-1.6 1.6c-1.9-.9-3.4-2.4-4.3-4.3l1.6-1.6z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>61 862 51 21</a>
@@ -423,7 +456,7 @@ section{padding:48px 0}
     <div class="ph-tx">
     <ol class="okr" aria-label="Ścieżka nawigacji"><li><a href="../">Strona główna</a></li><li aria-current="page">Polityka prywatności</li></ol>
     <h1>Polityka <span class="nw">prywatności<span class="dot" aria-hidden="true"></span></span></h1>
-    <p class="lead">Informacje o przetwarzaniu danych osobowych i plikach cookies.</p>
+    <p class="lead">Informacje o&nbsp;przetwarzaniu danych osobowych i&nbsp;plikach cookies.</p>
     </div>
     
   </div>
@@ -431,18 +464,18 @@ section{padding:48px 0}
 <section>
   <div class="wrap prawne">
     <h2>Administrator danych</h2>
-    <p>Administratorem danych osobowych jest Krzysztof Śniadalski, prowadzący działalność gospodarczą pod firmą „FOTOSERWIS” KRZYSZTOF ŚNIADALSKI, ul. Galileusza 8, 60-159 Poznań, NIP 779-118-78-65. Kontakt: tel. 61 862 51 21, e-mail <a href="mailto:info@foto-naprawa.com">info@foto-naprawa.com</a>.</p>
-    <h2>Jakie dane i w jakim celu</h2>
-    <p>Jeśli kontaktujesz się z nami telefonicznie lub e-mailem, przetwarzamy dane, które nam podasz (np. imię i nazwisko, numer telefonu, adres e-mail, adres do odesłania sprzętu), w celu odpowiedzi na zapytanie i wykonania naprawy (art. 6 ust. 1 lit. b RODO) oraz wypełnienia obowiązków księgowych i podatkowych (art. 6 ust. 1 lit. c RODO).</p>
-    <p>Dane przechowujemy przez czas potrzebny do realizacji naprawy i obsługi gwarancji, a dokumenty księgowe przez okres wymagany przepisami.</p>
+    <p>Administratorem danych osobowych jest Krzysztof Śniadalski, prowadzący działalność gospodarczą pod firmą „FOTOSERWIS” KRZYSZTOF ŚNIADALSKI, ul.&nbsp;Galileusza 8, <span class="nw">60-159 Poznań</span>, NIP 779-118-78-65. Kontakt: tel. 61 862 51 21, e-mail <a href="mailto:info@foto-naprawa.com">info@foto-naprawa.com</a>.</p>
+    <h2>Jakie dane i&nbsp;w&nbsp;jakim celu</h2>
+    <p>Jeśli kontaktujesz się z&nbsp;nami telefonicznie lub e-mailem, przetwarzamy dane, które nam podasz (np.&nbsp;imię i&nbsp;nazwisko, numer telefonu, adres e-mail, adres do odesłania sprzętu), w&nbsp;celu odpowiedzi na zapytanie i&nbsp;wykonania naprawy (art. 6 ust. 1 lit. b RODO) oraz wypełnienia obowiązków księgowych i&nbsp;podatkowych (art. 6 ust. 1 lit. c RODO).</p>
+    <p>Dane przechowujemy przez czas potrzebny do realizacji naprawy i&nbsp;obsługi gwarancji, a&nbsp;dokumenty księgowe przez okres wymagany przepisami.</p>
     <h2>Pliki cookies</h2>
-    <p>Strona korzysta z plików cookies. Używamy ich do zapamiętania, że zamknięto informację o cookies, oraz do statystyki odwiedzin (Google Analytics). Na stronie Kontakt wyświetlamy mapę Google, która może zapisywać własne pliki cookies Google.</p>
-    <p>Możesz w każdej chwili usunąć pliki cookies lub zablokować ich zapisywanie w ustawieniach swojej przeglądarki.</p>
+    <p>Strona korzysta z&nbsp;plików cookies. Używamy ich do zapamiętania, że zamknięto informację o&nbsp;cookies, oraz do statystyki odwiedzin (Google Analytics). Na stronie Kontakt wyświetlamy mapę Google, która może zapisywać własne pliki cookies Google.</p>
+    <p>Możesz w&nbsp;każdej chwili usunąć pliki cookies lub zablokować ich zapisywanie w&nbsp;ustawieniach swojej przeglądarki.</p>
     <h2>Odbiorcy danych</h2>
-    <p>Dane mogą być powierzane podmiotom, które świadczą dla nas usługi hostingu, poczty e-mail, księgowe oraz przewozowe (przy odsyłce sprzętu), a w zakresie statystyk i mapy - firmie Google.</p>
+    <p>Dane mogą być powierzane podmiotom, które świadczą dla nas usługi hostingu, poczty e-mail, księgowe oraz przewozowe (przy odsyłce sprzętu), a&nbsp;w&nbsp;zakresie statystyk i&nbsp;mapy - firmie Google.</p>
     <h2>Twoje prawa</h2>
-    <ul><li>dostęp do danych, ich sprostowanie, usunięcie lub ograniczenie przetwarzania,</li><li>sprzeciw wobec przetwarzania i przeniesienie danych,</li><li>skarga do Prezesa Urzędu Ochrony Danych Osobowych.</li></ul>
-    <p>W sprawach danych osobowych skontaktuj się z nami telefonicznie lub e-mailem.</p>
+    <ul><li>dostęp do danych, ich sprostowanie, usunięcie lub ograniczenie przetwarzania,</li><li>sprzeciw wobec przetwarzania i&nbsp;przeniesienie danych,</li><li>skarga do Prezesa Urzędu Ochrony Danych Osobowych.</li></ul>
+    <p>W&nbsp;sprawach danych osobowych skontaktuj się z&nbsp;nami telefonicznie lub e-mailem.</p>
   </div>
 </section>
 </main>
@@ -452,13 +485,13 @@ section{padding:48px 0}
       <div>
         <a class="logo" href="../">
           <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M1 9V1h8M19 1h8v8M27 19v8h-8M9 27H1v-8" fill="none" stroke="#fff" stroke-width="2.4"/><circle cx="14" cy="14" r="3.6" fill="#BC1A1F"/></svg>
-          <span>Fotoserwis<small>serwis aparatów fotograficznych, obiektywów i kamer video</small></span>
+          <span>Fotoserwis<small>serwis aparatów fotograficznych, obiektywów i&nbsp;kamer video</small></span>
         </a>
       </div>
       <div>
         <p class="h4">Adres</p>
-        <p>ul. Galileusza 8, I piętro</p>
-        <p>60-159 Poznań</p>
+        <p>ul.&nbsp;Galileusza 8, I&nbsp;piętro</p>
+        <p><span class="nw">60-159 Poznań</span></p>
         <p>pon.-pt. 9:00-17:00</p>
       </div>
       <div>
@@ -468,7 +501,7 @@ section{padding:48px 0}
       </div>
       <nav aria-label="Strony">
         <p class="h4">Strony</p>
-        <a href="../uslugi/">Usługi</a><a href="../o-nas/">O nas</a><a href="../dlaczego-my/">Dlaczego my</a><a href="../jak-oddac-sprzet/">Jak oddać sprzęt</a><a href="../kontakt/">Kontakt</a>
+        <a href="../uslugi/">Usługi</a><a href="../o-nas/">O&nbsp;nas</a><a href="../dlaczego-my/">Dlaczego my</a><a href="../jak-oddac-sprzet/">Jak oddać sprzęt</a><a href="../kontakt/">Kontakt</a>
         <a href="../polityka-prywatnosci/">Polityka prywatności</a>
       </nav>
     </div>
@@ -476,10 +509,10 @@ section{padding:48px 0}
       <span>&copy; 2026 FOTOSERWIS Poznań</span>
       <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=foto-naprawa.com&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
     </div>
-    <p class="zr">Podgląd strony. Zdjęcia: pierwszy ekran, aparat analogowy i kamera - zdjęcia serwisu. Aparat cyfrowy: <a href="https://commons.wikimedia.org/wiki/File:Nikon_D3200,_front_left.JPG" rel="noopener">„Nikon D3200, front left”</a>, autor: Rwendland, Wikimedia Commons, licencja <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.pl" rel="noopener">CC BY-SA 3.0</a>. Obiektyw: <a href="https://commons.wikimedia.org/wiki/File:Lens_Nikkor_50mm.jpg" rel="noopener">„Lens Nikkor 50mm”</a>, autor: André Karwath aka Aka, Wikimedia Commons, licencja <a href="https://creativecommons.org/licenses/by-sa/2.5/deed.pl" rel="noopener">CC BY-SA 2.5</a>. Zmiany w obu zdjęciach: kadrowanie do proporcji 4:3, dopełnienie tła, lekka korekta kontrastu; zmienione wersje udostępniane na tych samych licencjach. Lampa błyskowa: Bedirhan Akyüz, <a href="https://unsplash.com/photos/rbQqbUT_riw" rel="noopener">Unsplash</a> (licencja Unsplash).</p>
+    <p class="zr">Podgląd strony. Zdjęcia: pierwszy ekran, aparat analogowy i&nbsp;kamera - zdjęcia serwisu (nowe jednolite tło). Aparat cyfrowy: <a href="https://commons.wikimedia.org/wiki/File:Nikon_D3200,_front_left.JPG" rel="noopener">„Nikon D3200, front left”</a>, autor: Rwendland, Wikimedia Commons, licencja <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.pl" rel="noopener">CC BY-SA 3.0</a>. Obiektyw: <a href="https://commons.wikimedia.org/wiki/File:Lens_Nikkor_50mm.jpg" rel="noopener">„Lens Nikkor 50mm”</a>, autor: André Karwath aka Aka, Wikimedia Commons, licencja <a href="https://creativecommons.org/licenses/by-sa/2.5/deed.pl" rel="noopener">CC BY-SA 2.5</a>. Zmiany w&nbsp;obu zdjęciach: wycięcie z&nbsp;tła, nowe jednolite tło, kadrowanie 4:3, lekka korekta kontrastu; zmienione wersje udostępniane na tych samych licencjach. Lampa błyskowa: Bedirhan Akyüz, <a href="https://unsplash.com/photos/rbQqbUT_riw" rel="noopener">Unsplash</a> (licencja Unsplash).</p>
   </div>
 </footer>
-<div class="cookies" id="cookies" hidden><p>Strona korzysta z plików cookies, m.in. przy wyświetlaniu mapy Google. Szczegóły w <a href="../polityka-prywatnosci/">polityce prywatności</a>.</p><button type="button" id="cok">Rozumiem</button></div>
+<div class="cookies" id="cookies" hidden><p>Strona korzysta z&nbsp;plików cookies, m.in. przy wyświetlaniu mapy Google. Szczegóły w <a href="../polityka-prywatnosci/">polityce prywatności</a>.</p><button type="button" id="cok">Rozumiem</button></div>
 <script>try{if(!localStorage.getItem('cok'))document.getElementById('cookies').hidden=false}catch(e){document.getElementById('cookies').hidden=false}document.getElementById('cok').onclick=function(){try{localStorage.setItem('cok','1')}catch(e){}document.getElementById('cookies').hidden=true}</script>
 <script src="../app.js" defer></script>
 </body>
